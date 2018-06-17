@@ -1,0 +1,543 @@
+/*
+#### 1.0 RESET ####
+*/
+
+*, html, body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 20px;
+	font-family: 'Verlag';
+}
+
+*::selection {
+	background: #14befb;
+	color: rgb(0,0,0);
+}
+
+*::-moz-selection {
+	background: #14befb;
+	color: rgb(0,0,0);
+}
+
+
+
+/*
+#### 2.0 FONTES ####
+*/
+
+	/*
+	##### 2.1 VERLAG REGULAR
+	*/
+
+	@font-face {
+	  font-family: 'Verlag';
+	  src: url('assets/fonts/Verlag-Black.otf') format('opentype');
+	  font-weight: bolder;
+	  font-style: normal;
+	}
+
+	@font-face {
+	  font-family: 'Verlag';
+	  src: url('assets/fonts/Verlag-Bold.otf') format('opentype');
+	  font-weight: bold;
+	  font-style: normal;
+	}
+
+	@font-face {
+	  font-family: 'Verlag';
+	  src: url('assets/fonts/Verlag-Book.otf') format('opentype');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+	@font-face {
+	  font-family: 'Verlag';
+	  src: url('assets/fonts/Verlag-Light.otf') format('opentype');
+	  font-weight: light;
+	  font-style: normal;
+	}
+
+	@font-face {
+	  font-family: 'Verlag';
+	  src: url('assets/fonts/Verlag-XLight.otf') format('opentype');
+	  font-weight: lighter;
+	  font-style: normal;
+	}
+
+	/*
+
+/*
+#### FIM DE FONTES
+*/
+
+/*
+#### 3.0 CONTEÚDO
+*/
+
+/*
+	##### ANIMAÇÕES
+*/
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes aparecer {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes aparecer {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.fadeIn, .fadeIn01, .fadeIn02, .fadeIn03, .fadeIn04, .fadeIn05, .fadeIn06, .fadeIn07{
+	opacity: 0;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-name: aparecer;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-name: aparecer;
+}
+
+.fadeIn{
+    animation-delay: 0.25s;
+	-webkit-animation-delay: 0.25s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+
+.fadeIn01{
+    animation-delay: 0.3s;
+	-webkit-animation-delay: 0.3s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+
+.fadeIn02{
+    animation-delay: 0.35s;
+	-webkit-animation-delay: 0.35s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+
+.fadeIn03{
+    animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+
+.fadeIn04{
+    animation-delay: 0.45s;
+	-webkit-animation-delay: 0.45s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+
+.fadeIn05{
+    animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+
+.fadeIn06{
+    animation-delay: 0.55s;
+	-webkit-animation-delay: 0.55s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+
+.fadeIn07{
+    animation-delay: 0.6s;
+	-webkit-animation-delay: 0.6s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+}
+
+
+
+
+/*
+##### 3.1 PADRÕES
+*/
+
+
+/*
+##### 3.2 HEADER
+*/
+
+header {
+	background-color: rgb(244, 242, 240);
+	padding: 20px;
+	padding-bottom: 30px;	
+	box-shadow: 0 1px 3px rgba(165, 165, 165, 0.8);
+}
+
+header .row{
+	padding: 12px;
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
+
+
+
+header h5 span{
+	color: #14befb;
+	font-weight: bolder;
+	font-size: 2em;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+header h5 span::selection{
+	color: rgb(0,0,0);
+	background-color: #14befb;
+}
+
+header h5 span::-moz-selection {
+	color: rgb(0,0,0);
+	background: #14befb;
+}
+
+
+
+header h5 span:first-child{
+	color: rgb(0,0,0);
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+header h5 span:first-child::selection {
+	color: #14befb;
+	background: rgb(0,0,0);
+}
+
+header h5 span:first-child::-moz-selection {
+	color: #14befb;
+	background: rgb(0,0,0);
+}
+
+.titulo h3{
+	font-size: 2.2em;
+	line-height: 1em;
+	color: #000;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+	margin-top: -27px;
+	margin-bottom: 25px;
+}
+
+h3 span{
+	font-size: 0.6em;
+}
+
+
+header section article div{
+	height: 33px;
+	line-height: 33px;
+}
+
+.titulo{
+	margin-top: 10px;
+}
+
+.btnLinkedIn{
+	color: rgb(165, 165, 165);
+	height: 27px;
+  	line-height: 27px;
+  	transition: all 0.4s ease-in-out;
+}
+
+.btnLinkedIn:hover{
+	color: rgb(0, 201, 255);
+	text-decoration: none;
+}
+
+header i{
+	color: rgb(0, 191, 255);
+	margin: 0 5px;
+    font-size: 1.6em;
+    -webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+header i:hover{
+	color: rgb(0, 201, 255);
+	margin: 0 5px;
+    font-size: 1.7em;
+}
+
+h4 {
+    font-size: 1.5em;
+    line-height: 0.4em;
+    text-align: -webkit-right;
+}
+
+
+.contatos{
+	margin-top: 20px;
+}
+
+.contatos h4 a::selection {
+	color: #14befb;
+	background: rgb(0,0,0);
+}
+
+#tel{
+	font-size: 0.975em;
+}
+
+.contatos, .contatos h4 a{
+	color: rgb(0, 201, 255);
+	text-align: right;
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.contatos, .contatos h4 a:hover{
+	color: rgb(165, 165, 165);
+	text-decoration: none;
+    margin-top: 65px;
+    margin-bottom: -16px;
+}
+
+.contatos ul li {
+	color: rgb(165, 165, 165);
+	list-style: none;
+	font-size: 0.8em;
+	text-decoration: none;
+}
+
+.contatos ul li a{
+	text-decoration: none;
+}
+
+.contatos ul li a:hover{
+	text-decoration: none;
+}
+
+/*
+##### 3.3 MAIN
+*/
+
+main {
+	padding: 20px;
+	margin: 0;
+}
+
+	aside{
+
+	}
+
+	.row{
+		margin: 0;
+		height: auto;
+	}
+
+	.timeline .row, .formacao .row, .habilidades .row{
+		vertical-align: center;
+	}
+
+	.formacao h3{
+		margin-top: 40px;
+		margin-bottom: 30px;
+		color: #14befb;
+		font-weight: bolder;
+		font-size: 2em;
+		line-height: 2em;
+		text-align: center;
+		text-transform: uppercase;
+		-webkit-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+		transition: all 0.4s ease-in-out;
+	}
+
+	article#xp.row.col-12{
+		margin-top: 23px;
+	}
+
+	.timeline h3, .habilidades h3{
+	margin-bottom: 60px;
+	margin: auto;
+	color: #14befb;
+	font-weight: bolder;
+	font-size: 2em;
+	line-height: 2em;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	}
+
+	.timeline h3::selection, .formacao h3::selection, .habilidades h3::selection{
+		color: rgb(0,0,0);
+		background-color: #14befb;
+	}
+
+
+	.timeline article:first-child, .formacao article:first-child{
+		margin: auto auto -15px 60px;
+	}
+	
+
+	#xp div:first-child, #xp1 div:first-child, #xp2 div:first-child, #xp3 div:first-child, #xp4 div:first-child{
+		color: rgb(165, 165, 165);
+		text-align: right;
+	}
+
+	#fm div:first-child, #fm1 div:first-child, #fm2 div:first-child, #fm3 div:first-child, #fm4 div:first-child{
+		color: rgb(165, 165, 165);
+		text-align: right;
+	}
+
+
+	.xp-info, .xp-cargo, .fm-info, .fm-cargo {
+		text-transform: uppercase;
+		font-size: 0.9em;
+		font-weight: bold;
+		height: 7em;
+	}
+	
+
+	/*#xp .xp-info, #xp .xp-cargo, */#xp4 .xp-info, #xp4 .xp-cargo {
+		height: 4.65em;
+	}
+
+	/*#fm .fm-info, #fm .fm-cargo, */#fm4 .fm-info, #fm4 .fm-cargo {
+		height: 4.65em;
+	}
+
+	.vertline{
+		border-right: 3px solid rgb(244, 242, 240);
+    	padding: 0 10px;
+	}
+
+	#xp4 .vertline, #fm4 .vertline{
+    	margin-bottom: 72px;
+	}
+
+	.xp-cargo, .fm-cargo{
+		color: #000;
+		padding-left: 30px;
+	}
+
+	.xp-cargo:before, .fm-cargo:before{
+		display: inline-block;
+		content: '';
+		-webkit-border-radius: 50%;
+	    border-radius: 50%;
+	    height: 20px;
+	    width: 20px;
+	    /*margin-top: 16px;*/
+	    margin-right: 21px;
+	    margin-left: -42px;
+	    border: 3px solid #fff;
+	    background-color: #14befb;
+	}
+
+	.xp-cargo i, .fm-cargo i{
+		font-weight: lighter;
+		font-size: 1em;
+		padding-top: -5px;
+	}
+
+	.xp-info i, .fm-info i {
+		font-weight: lighter;
+		font-size: 0.75em;
+		padding-top: -5px;
+	}
+
+h2, h2.col-12{
+	text-align: left;
+	font-size: 1.2em;
+	color: #495057;
+	font-weight: bolder;
+	display: inline-block;
+	padding-right: 0;
+	padding-left: 0;
+	margin-top: 20px;
+}
+
+mark{
+	background-color: #14befb;
+	color: #000;
+}
+
+.subtitulo{
+	font-weight: lighter;
+    font-size: 0.75em;
+    float: left;
+    width: 80%;
+    margin-bottom: 5px;
+    margin-top: -8px;
+	padding-left: initial;
+}
+
+
+.subtitulo i{
+	font-weight: lighter;
+	font-size: inherit;
+}
+
+.habilidades article ul li{
+	font-size: 0.89em;
+}
+
+.habilidades article ul li i{
+	font-size: 1em;
+}
+
+
+.area{
+	float: left;
+}
+
+.area article{
+	display: inline-block;
+}
+
+.area h6{
+	margin-right: 4px;
+	margin-top: 5%;
+	padding: 0;
+	font-size: 1em;
+}
+.area ul{
+	border-left: 2px solid #14befb;
+	list-style: none;
+	padding: 0 0 0 16px;
+    margin-left: -8px;
+}
+
+.area ul.skills li{
+	font-size: 0.8em;
+}
+
+/*
+##### 3.4 FOOTER
+*/
+
+footer{
+	min-height: 10vh;
+	height: 10vh;
+	background: #14befb;
+	box-shadow: 0 -1px 3px rgba(165, 165, 165, 0.8);
+	margin-top: 23px;
+}
+
+footer small {
+    color: #fff;
+    text-align: center;
+    margin-top: 3%;
+}
